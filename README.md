@@ -11,9 +11,9 @@ Description:
 A beginner project for learning basic programming skills by creating a simple animation. 
 Features: 
 
-<h3>
+<h1>
 Features:
-</h3>
+</h1>
 
 Creates two balls which bounce around screen while changing color and height and width. 
 
