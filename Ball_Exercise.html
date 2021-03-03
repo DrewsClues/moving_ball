@@ -1,0 +1,132 @@
+<div id="ball" style="
+    z-index: 5;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background: green"></div>
+
+<div id="ball2" style="
+    z-index: 5;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background: green"></div>
+
+
+
+<script>
+
+    var velocity = 17;
+    var velocityY = 13;
+    var positionX = 0;
+    var positionY = 0;
+
+    var velocity2 = 17;
+    var velocityY2 = 13;
+    var positionX2 = 0;
+    var positionY2 = 0;
+
+    var Xmax = 400;
+    var Ymax = 400;
+    var Xmin = 0;
+    var Ymin = 0;
+    var ball = document.getElementById('ball');
+    var ball2 = document.getElementById('ball2');
+    var reverseX = false;
+    var reverseY = false;
+
+    var reverseX2 = false;
+    var reverseY2 = false;
+
+    var ball_width = 50
+
+</script>
+
+<script>
+function move_ball(){
+    if (reverseX){
+        positionX = positionX - velocity;
+        positionX2 = positionX2 - velocity2;
+
+        ball.style.left = positionX + 'px';
+        ball2.style.left = positionX2 + 'px';
+
+        ball.style.background = "black";
+        ball2.style.left = positionX + 'px';
+        ball2.style.background = "black";
+        
+    }
+    else{
+        positionX = positionX + velocity;
+        ball.style.left = positionX + 'px';
+
+        positionX2 = positionX2 + velocity2;
+        ball2.style.left = positionX2 + 'px';
+
+        ball.style.background = "red";
+        ball2.style.left = positionX + 'px';
+        ball2.style.background = "red";
+    }
+
+    if (reverseY){
+        positionY = positionY - velocityY;
+        ball.style.top = positionY + 'px';
+
+        positionY2 = positionY2 - velocityY2;
+        ball2.style.top = positionY2 + 'px';
+
+        ball.style.background = "purple";
+        ball2.style.top = positionY + 'px';
+        ball2.style.background = "black";
+        
+    }
+    else{
+        positionY = positionY + velocityY;
+        ball.style.top = positionY + 'px';
+
+        positionY2 = positionY2 + velocityY2;
+        ball2.style.top = positionY2 + 'px';
+
+        ball.style.background = "blue";
+        ball2.style.top = positionY + 'px';
+        ball2.style.background = "green";
+    }
+
+
+    
+
+    
+
+
+    if (positionX > Xmax ||
+        positionX === Xmin){
+            reverseX = !reverseX;
+        }
+    if (positionY > Ymax ||
+        positionY === Ymin){
+            reverseY = !reverseY;
+        }
+
+    if (reverseX){
+        ball.style.width = 20;
+        ball.style.height = 120;
+        ball2.style.width = 120;
+        ball2.style.height = 20;
+    }
+    else{
+        ball.style.width = 100;
+        ball.style.height = 50;
+        ball2.style.width = 50;
+        ball2.style.height = 100;
+    }
+    
+}
+
+setInterval(move_ball, 75);
+</script>
