@@ -4,9 +4,9 @@
 
 MITxPro Week 2 Assignment. 
 
-<h2>
+<h1>
 Description: 
-</h2>
+</h1>
 
 A beginner project for learning basic programming skills by creating a simple animation. 
 Features: 
@@ -17,27 +17,27 @@ Features:
 
 Creates two balls which bounce around screen while changing color and height and width. 
 
-<h4>
+<h1>
 Installation: 
-</h4>
+</h1>
 
 Simply click on the html file and it should be ready for use. 
 
-<h5>
+<h1>
 Support:
-</h5>
+</h1>
 
 If any technical problems are encountered feel free to contact me at atdd1929@gmail.com
 
-<h6>
+<h1>
 Roadmap: 
-</h6>
+</h1>
 
 In the future I may want to add more balls and have a greater variety of visual effects. 
 
-<h7>
+<h1>
 Licensing: 
-</h7>
+</h1>
 
 Free open source. 
 
