@@ -1,4 +1,6 @@
-Moving Ball Project
+<h1>
+  Moving Ball Project
+</h1>
 
 MITxPro Week 2 Assignment. 
 
